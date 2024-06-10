@@ -4,12 +4,11 @@ local files = {
     "levercontroller.lua",
     "mob_grinder.lua",
     "RaphaelOS.lua",
-    "TextOnMonitor.lua",
-    "install.lua"
+    "TextOnMonitor.lua"
 }
 
 
-local baseURL = "https://raw.githubusercontent.com/YourUsername/YourRepo/main/"
+local baseURL = "https://raw.githubusercontent.com/DonealPique/Experiment-V/tree/main/scripts"
 local worldURL = "https://drive.google.com/file/d/1QTTchrM8epDm188MYBwzM2LN87Z9Ez4p/view?usp=sharing"
 
 for _, file in ipairs(files) do
@@ -20,3 +19,4 @@ end
 shell.run("wget", worldURL, "Experiment V.zip")
 
 print("All scripts and world have been downloaded.")
+print("Please restart the computer to apply changes. (Ctrl + R + Enter)")
