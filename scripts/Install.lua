@@ -7,7 +7,7 @@ local files = {
     "TextOnMonitor.lua"
 }
 
-local baseURL = "https://raw.githubusercontent.com/DonealPique/Experiment-V/main/scripts/"
+local baseURL = "https://raw.githubusercontent.com/DonealPique/Experiment-V/main/scripts/lua"
 local worldURL = "https://drive.google.com/uc?export=download&id=1QTTchrM8epDm188MYBwzM2LN87Z9Ez4p"
 
 local function downloadFile(fileName)
