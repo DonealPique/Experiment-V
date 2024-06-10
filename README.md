@@ -1,5 +1,7 @@
 # How to Run the Project
 
+**Read the project plan first!!**
+
 ## Download and Install Minecraft
 
 - Ensure you have Minecraft installed on your computer.
@@ -33,4 +35,4 @@ This command will automatically download and run the `install.lua` script from t
 
 - Ensure you follow safety precautions when experimenting with the self-destruct feature in Raphael OS (**It wil explode.....no cap ♨︎_♨︎**).
 - For any issues or feedback, please open an issue on the GitHub repository.
-Check out the videos if you want to see what i've built!
+- Check out the videos if you want to see what i've built!
