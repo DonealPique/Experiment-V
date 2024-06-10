@@ -19,7 +19,7 @@ for _, file in ipairs(files) do
     end
 end
 
-shell.run("wget", worldURL, "Experiment_V.zip")
+shell.run("wget", worldURL, "Experiment V.zip")
 
 print("All scripts and world have been downloaded.")
 print("Please restart the computer to apply changes. (Ctrl + R + Enter)")
