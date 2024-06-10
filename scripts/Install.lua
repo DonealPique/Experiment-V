@@ -8,7 +8,7 @@ local files = {
 }
 
 
-local baseURL = "https://raw.githubusercontent.com/DonealPique/Experiment-V/tree/main/scripts"
+local baseURL = "https://raw.githubusercontent.com/DonealPique/Experiment-V/main/scripts/"
 local worldURL = "https://drive.google.com/file/d/1QTTchrM8epDm188MYBwzM2LN87Z9Ez4p/view?usp=sharing"
 
 for _, file in ipairs(files) do
