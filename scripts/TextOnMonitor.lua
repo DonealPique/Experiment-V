@@ -1,0 +1,7 @@
+monitor = peripheral.wrap("right")
+monitor.clear()
+monitor.setCursorPos(2, 4)
+monitor.setTextScale(3)
+monitor.write("The Slaughterhouse")
+monitor.setCursorPos(9, 8)
+monitor.write("Open!")
