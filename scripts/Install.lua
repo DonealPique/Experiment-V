@@ -10,16 +10,42 @@ local files = {
 local baseURL = "https://raw.githubusercontent.com/DonealPique/Experiment-V/main/scripts/"
 local worldURL = "https://drive.google.com/uc?export=download&id=1QTTchrM8epDm188MYBwzM2LN87Z9Ez4p"
 
-for _, file in ipairs(files) do
-    local url = baseURL .. file
-    print("Downloading " .. url .. " to " .. file)
-    local result = shell.run("wget", url, file)
-    if not result then
-        print("Failed to download " .. file)
+local function downloadFile(fileName)
+    local url = baseURL .. fileName
+    print("Downloading " .. fileName .. " from " .. url .. "...")
+    local response = http.get(url)
+    
+    if response then
+        local script = response.readAll()
+        response.close()
+        
+        local file = fs.open("/" .. fileName, "w")
+        if file then
+            file.write(script)
+            file.close()
+            print("Downloaded and saved as " .. fileName)
+            return true
+        else
+            print("Error: Could not save " .. fileName .. ". Please check if the file system is writable.")
+            return false
+        end
+    else
+        print("Failed to download " .. fileName .. ". Check the URL and try again.")
+        return false
     end
 end
 
-shell.run("wget", worldURL, "Experiment V.zip")
+local allSuccessful = true
+for _, file in ipairs(files) do
+    if not downloadFile(file) then
+        allSuccessful = false
+    end
+end
 
-print("All scripts and world have been downloaded.")
-print("Please restart the computer to apply changes. (Ctrl + R + Enter)")
+print("Downloading world file...")
+local success = shell.run("wget", worldURL, "Experiment V.zip")
+if not success then
+    print("Failed to download world file.")
+else
+    print("Successfully downloaded world file.")
+end
