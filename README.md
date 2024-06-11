@@ -15,11 +15,11 @@
 
 1. In Minecraft, place down the necessary Computercraft turtles or computers.
 2. Open the Computercraft interface on each turtle or computer.
-3. Use the following command to download and execute the main script (e.g., `install.lua`) directly from the project repository on GitHub:
+3. Use the following command to download and execute the main script (e.g., `Install.lua`) directly from the project repository on GitHub:
 
-- wget run `https://raw.githubusercontent.com/DonealPique/Experiment-V/main/scripts/install.lua`
+- wget run `https://raw.githubusercontent.com/DonealPique/Experiment-V/main/Install.lua`
 
-This command will automatically download and run the `install.lua` script from the specified URL. **[Bonus]** My world will also be included in the download. Make sure to extracted zip file and use windows + R command and run this `%appdata%`. Once you've done that it'll bring you to the directory where Minecraft is located. Navigate through `.minecraft` to find saves and copy the extracted world folder and place it in saves. It should work if done correctly.
+This command will automatically download and run the `Install.lua` script from the specified URL. **[Bonus]** My world will also be included in the download. Make sure to extracted zip file and use windows + R command and run this `%appdata%`. Once you've done that it'll bring you to the directory where Minecraft is located. Navigate through `.minecraft` to find saves and copy the extracted world folder and place it in saves. It should work if done correctly.
 
 ## Interact with the System
 
