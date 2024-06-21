@@ -55,4 +55,4 @@ My project can help other players in the Minecraft community by providing them w
 
 # PS
 
-(It wasn't suppose take this long but wasted a lot time reading docs and watching tutorial videos on youtube..... (┬┬﹏┬┬) ).
+(It wasn't suppose take this long but i wasted a lot time reading docs and watching tutorial videos on youtube..... (┬┬﹏┬┬) ).
